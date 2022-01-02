@@ -1,16 +1,17 @@
 import firebase from "firebase";
-require("@firebase/firestore");
+require("firebase/firebase-firestore");
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCZrG0BF6LrnRpWZjsPQxNGyMCLByo8HrM",
-  authDomain: "e-ride-549e4.firebaseapp.com",
-  projectId: "e-ride-549e4",
-  storageBucket: "e-ride-549e4.appspot.com",
-  messagingSenderId: "588298110700",
-  appId: "1:588298110700:web:34e3df331c6b1fc95047c9",
-  measurementId: "G-G3K7BWL5LH"
+  apiKey: "AIzaSyDT2Qidp-Yq9rLb57BDOtwHPpRkRvwfWPU",
+  authDomain: "project71-a43f9.firebaseapp.com",
+  projectId: "project71-a43f9",
+  storageBucket: "project71-a43f9.appspot.com",
+  messagingSenderId: "983963170049",
+  appId: "1:983963170049:web:1e8863a13debff7ac15700"
 };
 
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 export default firebase.firestore();
